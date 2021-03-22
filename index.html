@@ -21,7 +21,8 @@
     <link rel="preload" href="./fonts/OpenSans-Bold.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="./fonts/OpenSans-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <!-- CSS-->
-    <link rel="stylesheet" href="./css/style.min.css" media="print" onload="this.media='all';"> <!-- SVG SPRITE-->
+    <style>.kv-app input{font-size:1}.kv-app .kv-payment-chb__item .kv-checkbox__box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.kv-app .kv-payment-chb__title{overflow-wrap:break-word}body,html{-webkit-box-sizing:border-box;box-sizing:border-box;background-color:silver;width:100%;font-size:100%;position:relative;text-rendering:optimizeSpeed;margin:0;padding:0;border:0;outline:0!important}html{scroll-behavior:smooth}body{min-height:100vh}.kv-app{--fnt-main:'Open Sans',sans-serif;--c-main:hsl(0, 0%, 100%);--c-prim:hsl(189, 100%, 42%);--c-prim_light:hsla(189, 100%, 42%, 0.102);--c-second:hsl(190, 28%, 35%);--c-second_dark:hsl(190, 63%, 17%);--c-success:hsl(131, 61%, 48%);--c-success_light:hsla(131, 61%, 48%, 0.1);--c-disabled:hsl(0, 0%, 96%);--c-disabled_dark:hsl(0, 0%, 82%);--c-info:hsl(55, 100%, 50%);--c-info_pale:hsla(55, 100%, 50%, 0.1);--c-info_light:hsla(55, 100%, 50%, 0.5);--c-info_bright:hsla(55, 100%, 50%, 0.7);--c-hot:hsl(29, 100%, 50%)}.kv-app,.kv-app *{font-family:var(--fnt-main);-webkit-animation:none;animation:none;-webkit-animation-delay:0;animation-delay:0;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-duration:0;animation-duration:0;-webkit-animation-fill-mode:none;animation-fill-mode:none;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-name:none;animation-name:none;-webkit-animation-play-state:running;animation-play-state:running;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-backface-visibility:visible;backface-visibility:visible;background:0;background-attachment:scroll;background-clip:border-box;background-color:transparent;background-image:none;background-origin:padding-box;background-position:0 0;background-position-x:0;background-position-y:0;background-repeat:no-repeat;background-size:cover;border:0;border-style:none;border-width:medium;border-color:inherit;border-bottom:0;border-bottom-color:inherit;border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom-style:none;border-bottom-width:medium;border-collapse:collapse;-o-border-image:none;border-image:none;border-left:0;border-left-color:inherit;border-left-style:none;border-left-width:medium;border-radius:0;border-right:0;border-right-color:inherit;border-right-style:none;border-right-width:medium;border-spacing:0;border-top:0;border-top-color:inherit;border-top-left-radius:0;border-top-right-radius:0;border-top-style:none;border-top-width:medium;bottom:auto;-webkit-box-shadow:none;box-shadow:none;-webkit-box-sizing:border-box;box-sizing:border-box;caption-side:top;clear:none;clip:auto;color:inherit;-webkit-columns:auto;-moz-columns:auto;columns:auto;-webkit-column-count:auto;-moz-column-count:auto;column-count:auto;-webkit-column-fill:balance;-moz-column-fill:balance;column-fill:balance;-webkit-column-gap:normal;-moz-column-gap:normal;column-gap:normal;-webkit-column-rule:medium none currentColor;-moz-column-rule:medium none currentColor;column-rule:medium none currentColor;-webkit-column-rule-color:currentColor;-moz-column-rule-color:currentColor;column-rule-color:currentColor;-webkit-column-rule-style:none;-moz-column-rule-style:none;column-rule-style:none;-webkit-column-rule-width:none;-moz-column-rule-width:none;column-rule-width:none;-webkit-column-span:1;-moz-column-span:1;column-span:1;-webkit-column-width:auto;-moz-column-width:auto;column-width:auto;content:'';content:none;counter-increment:none;counter-reset:none;direction:ltr;empty-cells:show;float:none;font-size:medium;font-style:normal;font-variant:normal;font-weight:400;height:auto;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;left:auto;letter-spacing:normal;line-height:normal;list-style:none;list-style-image:none;list-style-position:outside;list-style-type:disc;margin:0;margin-bottom:0;margin-left:0;margin-right:0;margin-top:0;max-height:none;max-width:none;min-height:unset;min-width:unset;opacity:1;orphans:0;outline:0;outline-color:invert;outline-style:none;outline-width:medium;padding:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;page-break-after:auto;page-break-before:auto;page-break-inside:auto;-webkit-perspective:none;perspective:none;-webkit-perspective-origin:50% 50%;perspective-origin:50% 50%;position:static;quotes:"“" "”" "‘" "’";right:auto;-moz-tab-size:8;-o-tab-size:8;tab-size:8;table-layout:auto;text-align:inherit;-moz-text-align-last:auto;text-align-last:auto;text-decoration:none;-webkit-text-decoration-color:inherit;text-decoration-color:inherit;-webkit-text-decoration-line:none;text-decoration-line:none;-webkit-text-decoration-style:solid;text-decoration-style:solid;text-indent:0;text-shadow:none;text-transform:none;top:auto;-webkit-transform:none;-ms-transform:none;transform:none;-webkit-transform-style:flat;transform-style:flat;unicode-bidi:normal;vertical-align:baseline;visibility:visible;white-space:normal;widows:0;width:auto;word-spacing:normal;z-index:auto}.kv-app button,.kv-app input{font-size:1}.kv-app [type=button],.kv-app button{-webkit-appearance:button;background-color:transparent}.kv-app input::-ms-clear{display:none}.kv-app img{display:block;max-width:100%;height:auto}.kv-app .kv-content__bottom,.kv-app .kv-payment-chb__item .kv-checkbox__box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.kv-app .kv-payment-chb__top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.kv-app .kv-step-button__text{max-width:calc(100%);overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;overflow-wrap:normal;min-width:0}.kv-app .kv-payment-chb__title,.kv-app .kv-step-button__text{overflow-wrap:break-word}.kv-app .kv-step-button{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:11px 20px;border-radius:6px;background-color:var(--c-success);height:50px;overflow-y:hidden;min-width:0;position:relative}.kv-app .kv-step-button_left{padding-left:60px}.kv-app .kv-step-button_left .kv-step-button__icon{left:20px}.kv-app .kv-step-button_book{background-color:var(--c-hot);padding-left:20px;padding-right:20px;width:100%}.kv-app .kv-step-button_book .kv-step-button__text{text-transform:none;font-style:normal;font-weight:400;font-size:20px;line-height:27px;text-align:center;color:#fff}.kv-app .kv-step-button__text{font-family:var(--fnt-main);font-style:normal;font-weight:600;font-size:20px;line-height:1;text-transform:uppercase;color:var(--c-main)}.kv-app .kv-step-button__icon{width:20px;height:20px;fill:var(--c-main);position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);z-index:1}.kv-app .kv-content{padding-top:30px;padding-bottom:40px}.kv-app .kv-content__header{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:30px}.kv-app .kv-content__icon{-webkit-box-flex:0;-ms-flex:0 0 30px;flex:0 0 30px;margin-right:15px}.kv-app .kv-content__icon svg{width:30px;height:30px;fill:var(--c-second_dark)}.kv-app .kv-content__title{font-family:var(--fnt-main);font-style:normal;font-weight:700;font-size:24px;line-height:33px;color:var(--c-second_dark);border-bottom:1px solid var(--c-disabled_dark);-webkit-box-flex:1;-ms-flex:1 1 0%;flex:1 1 0%}.kv-app .kv-content__body:not(:last-child){padding-bottom:40px}.kv-app .kv-content__bottom{-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:626px;margin:0 auto}.kv-app .kv-content__btn{--kv-clg:2;--kv-cls:1;--kv-clb:600px;-webkit-box-flex:var(--kv-clg);-ms-flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);padding:10px;min-width:0}.kv-app .kv-content__btn_lg{--kv-clg:3;--kv-cls:1;--kv-clb:600px;-webkit-box-flex:var(--kv-clg);-ms-flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999)}.kv-app .kv-payment{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.kv-app .kv-payment__col{--kv-clg:1;--kv-cls:1;--kv-clb:700px;-webkit-box-flex:var(--kv-clg);-ms-flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);flex:var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999)}.kv-app .kv-payment__item{padding:15px}.kv-app .kv-payment-chb{background:var(--c-disabled);-webkit-box-shadow:0 0 0 1px var(--c-disabled_dark);box-shadow:0 0 0 1px var(--c-disabled_dark);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:6px;padding:15px 20px}.kv-app .kv-payment-chb__drop{max-height:0;height:auto;overflow:hidden}.kv-app .kv-payment-chb__drop_active{max-height:1000px;padding-top:15px}.kv-app .kv-payment-chb__icon{-webkit-box-flex:0;-ms-flex:0 0 68px;flex:0 0 68px;width:68px;height:30px;-o-object-fit:contain;object-fit:contain;margin-right:20px}.kv-app .kv-payment-chb__title{font-weight:700;font-size:18px;line-height:25px;color:var(--c-second_dark);-webkit-box-flex:1;-ms-flex:1 1 0%;flex:1 1 0%;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;line-clamp:1;min-width:0;min-width:0}.kv-app .kv-payment-chb__item{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.kv-app .kv-payment-chb__item input{position:absolute;opacity:0;height:0;width:0;z-index:-1;display:block}.kv-app .kv-payment-chb__item input:checked~.kv-checkbox__box{background-color:transparent;-webkit-box-shadow:0 0 0 1.5px var(--c-second);box-shadow:0 0 0 1.5px var(--c-second)}.kv-app .kv-payment-chb__item input:checked~.kv-checkbox__box svg{fill:var(--c-second)}.kv-app .kv-payment-chb__item .kv-checkbox__box{min-height:20px;min-width:20px;height:20px;width:20px;background-color:transparent;-webkit-box-shadow:0 0 0 1.5px var(--c-second);box-shadow:0 0 0 1.5px var(--c-second);border-radius:2px;line-height:inherit;margin-right:0}.kv-app .kv-payment-chb__item .kv-checkbox__box svg{width:16px;height:16px;fill:transparent}.kv-app .kv-payment-chb__input{display:block;background:#fff;border:1px solid var(--c-second);-webkit-box-sizing:border-box;box-sizing:border-box;border-radius:6px;width:100%;padding:7px 15px;height:34px;min-width:0}.kv-app .kv-payment-chb__input::-webkit-input-placeholder{font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:var(--c-second)}.kv-app .kv-payment-chb__input::-moz-placeholder{font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:var(--c-second)}.kv-app .kv-payment-chb__input:-ms-input-placeholder{font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:var(--c-second)}.kv-app .kv-payment-chb__input::-ms-input-placeholder{font-style:normal;font-weight:400;font-size:15px;line-height:20px;color:var(--c-second)}.kv-app .kv-payment-chb__input:not(:last-child){margin-bottom:10px}.kv-app{background-color:#fff}</style>
+    <link rel="stylesheet" href="css/style.3b9807ed.css" media="print" onload="this.media='all'"> <!-- SVG SPRITE-->
     <link rel="prefetch" href="./img/icons/icons.svg" as="image" type="image/svg+xml">
 </head>
 
@@ -30,280 +31,145 @@
 <div class="kv-container">
 
     <div class="kv-app">
-
-        <div class="kv-header">
-            <!-- Breadcrumps-->
-
-            <div class="kv-header__item kv-breadcrumps">
-
-                <div class="kv-breadcrumps__inner">
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Buchungsauftrag</span>
-                    </div>
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Aufenthaltsdauer</span>
-                    </div>
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Заполнение данных о туристах</span>
-                    </div>
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Заполнение данных о клиенте</span>
-                    </div>
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Проверка данных</span>
-                    </div>
-
-                    <div class="kv-breadcrumps__item">
-
-                        <span>Способ оплаты</span>
-                    </div>
-                </div>
-            </div> <!-- Step value-->
-
-            <div class="kv-header__item kv-step-values">
-
-                <div class="kv-step-values__inner">
-
-                    <div class="kv-step-values__row">
-
-                        <div class="kv-step-values__item">
-
-                            <span>Черногория</span>
-                        </div>
-
-                        <div class="kv-step-values__item">
-
-                            <span>Touristenvisum</span>
-
-                            <span>30 дней | 2-х кратная</span>
-                        </div>
-                    </div>
-
-                    <div class="kv-step-values__aside">
-                        <!-- Participants-->
-
-                        <div class="kv-participants"> <svg class="kv-participants__icon">
-                                <use href="img/icons/icons.svg#user"></use>
-                            </svg>
-
-                            <div class="kv-participants__multiply"> <svg>
-                                    <use href="img/icons/icons.svg#multiply"></use>
-                                </svg> </div>
-
-                            <div class="kv-participants__counter">2</div>
-                        </div> <!-- Cart-->
-
-                        <div class="kv-cart drop">
-
-                            <div class="kv-cart__head"> <svg class="kv-cart__icon">
-                                    <use href="img/icons/icons.svg#cart"></use>
-                                </svg>
-
-                                <div class="kv-cart__price" data-kv-cart-price="€"> 420</div> <svg
-                                    class="kv-cart__arrow drop__angle">
-                                    <use href="img/icons/icons.svg#arrow_down"></use>
-                                </svg>
-                            </div>
-
-                            <div class="kv-cart__body drop__body">
-                                <!-- Cart table-->
-
-                                <div class="kv-cart-table">
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-
-                                    <div class="kv-cart-table__row">
-
-                                        <div class="kv-cart-table__item">1</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_col">herr Иванов Иван</div>
-
-                                        <div class="kv-cart-table__item kv-cart-table__item_price"
-                                            data-kv-cart-price="€">100</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- Progress-->
-
-            <div class="kv-header__item kv-progress">
-
-                <div class="kv-progress__inner">
-
-                    <div class="kv-progress__step">Шаг №2</div>
-
-                    <div class="kv-progress__pipe">
-
-                        <div class="kv-progress__strip" style="--kv-progress: 20%"></div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- Step content-->
+        <!-- Step content-->
 
         <div class="kv-content">
 
             <div class="kv-content__header">
 
                 <div class="kv-content__icon"> <svg>
-                        <use href="img/icons/icons.svg#step_1"></use>
+                        <use href="img/icons/icons.svg#step_6"></use>
                     </svg> </div>
 
-                <div class="kv-content__title">Buchungsauftrag</div>
-            </div>
+                <div class="kv-content__title">Способ отправки</div>
+            </div> <!-- Payment-->
 
-            <div class="kv-content__body">
+            <div class="kv-content__body kv-payment">
 
-                <div class="kv-form">
-                    <!-- Form card-->
+                <div class="kv-payment__col">
 
-                    <div class="kv-form-card kv-form-card_dis">
-                        <!-- From row-->
+                    <div class="kv-payment__item">
 
-                        <div class="kv-row kv-form__row">
+                        <div class="kv-payment-chb">
 
-                            <div class="kv-form__item-wrap kv-col" style="--kv-clg: 700px;">
+                            <div class="kv-payment-chb__top">
+                                <picture>
+                                    <source srcset="img/payment/payment_1.webp" type="image/webp">
 
-                                <div class="kv-form__item kv-form__item_chb"> <label class="kv-form-radio"> <input
-                                            type="radio" checked name="checked" aria-label="checkbox" required>
+                                    <img class="kv-payment-chb__icon" src="img/payment/payment_1.png" alt="img">
+                                </picture>
 
-                                        <span class="kv-form-radio__mark">                        <svg>                          <use href="img/icons/icons.svg#form_chb"></use>                        </svg></span>
+                                <div class="kv-payment-chb__title">Vorkasse</div> <label class="kv-payment-chb__item">
+                                    <input type="radio" name="payment" aria-label="payment" required>
 
-                                        <span class="kv-form-radio__caption">Herr</span> </label> <label
-                                        class="kv-form-radio"> <input type="radio" name="checked" aria-label="checkbox"
-                                            required>
-
-                                        <span class="kv-form-radio__mark">                        <svg>                          <use href="img/icons/icons.svg#form_chb"></use>                        </svg></span>
-
-                                        <span class="kv-form-radio__caption">Frau</span> </label> </div>
+                                    <span class="kv-checkbox__box">                      <svg>                        <use href="img/icons/icons.svg#check"></use>                      </svg></span>
+                                </label>
                             </div>
 
-                            <div class="kv-form__item-wrap kv-form__item-wrap_center kv-col"
-                                style="--kv-cl: 2;--kv-clg: 700px; ">
-
-                                <div class="kv-form-title">Участник №1</div>
-                            </div>
-
-                            <div class="kv-form__item-wrap kv-form__item-wrap_right kv-col" style="--kv-clg: 700px;">
-
-                                <div class="kv-form-title kv-form-title_hv">Удалить</div>
-                            </div>
-                        </div> <!-- From row-->
-
-                        <div class="kv-form__row kv-row">
-
-                            <div class="kv-form__item-wrap kv-from__col">
-
-                                <div class="kv-form__item"> <input type="text" placeholder=" " id="sname" name="sname"
-                                        aria-label="password" required> <label class="kv-form__label"
-                                        for="sname">Фамилия</label> </div>
-                            </div>
-
-                            <div class="kv-form__item-wrap kv-from__col">
-
-                                <div class="kv-form__item"> <input type="text" placeholder=" " id="name" name="name"
-                                        aria-label="password" required> <label class="kv-form__label"
-                                        for="name">Имя</label> </div>
-                            </div>
+                            <div class="kv-payment-chb__drop"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> </div>
                         </div>
+                    </div>
 
-                        <div class="kv-form__row kv-row">
+                    <div class="kv-payment__item">
 
-                            <div class="kv-form__item-wrap kv-from__col">
+                        <div class="kv-payment-chb">
 
-                                <div class="kv-form__item"> <input type="text" placeholder=" " id="sname" name="sname"
-                                        aria-label="password" required> <label class="kv-form__label"
-                                        for="sname">Гражданство</label> </div>
+                            <div class="kv-payment-chb__top">
+                                <picture>
+                                    <source srcset="img/payment/payment_2.webp" type="image/webp">
+
+                                    <img class="kv-payment-chb__icon" src="img/payment/payment_2.png" alt="img">
+                                </picture>
+
+                                <div class="kv-payment-chb__title">Sofortüberweisung</div> <label
+                                    class="kv-payment-chb__item"> <input type="radio" name="payment"
+                                        aria-label="payment" required>
+
+                                    <span class="kv-checkbox__box">                      <svg>                        <use href="img/icons/icons.svg#check"></use>                      </svg></span>
+                                </label>
                             </div>
 
-                            <div class="kv-form__item-wrap kv-from__col">
-
-                                <div class="kv-form__item"> <input type="text" placeholder=" " id="name" name="name"
-                                        aria-label="password" required> <label class="kv-form__label" for="name">Место
-                                        жительства</label> </div>
-                            </div>
+                            <div class="kv-payment-chb__drop"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> </div>
                         </div>
+                    </div>
 
-                        <div class="kv-form__row kv-row">
+                    <div class="kv-payment__item">
 
-                            <div class="kv-form__item-wrap kv-from__col">
+                        <div class="kv-payment-chb">
 
-                                <div class="kv-form__item"> <select class="kv-form__sel" name="form[]" id="select"
-                                        required>
-                                        <option value="" selected="selected" label="empty"></option>
-                                        <option value="2">option 1 Lorem ipsum, dolor sit amet consectetur adipisicing
-                                            elit. Tempore consequatur, minima nesciunt aspernatur ipsam maxime fugit
-                                            facilis vitae non nisi! Perferendis autem natus suscipit vel expedita quos
-                                            dolore explicabo quia!</option>
-                                        <option value="3">option 2</option>
-                                        <option value="4">option 3</option>
-                                        <option value="5">option 4</option>
-                                        <option value="6">option 5</option>
-                                    </select> <svg class="kv-form__sel-arrow">
-                                        <use href="img/icons/icons.svg#select"></use>
-                                    </svg> </div>
+                            <div class="kv-payment-chb__top">
+                                <picture>
+                                    <source srcset="img/payment/payment_3.webp" type="image/webp">
+
+                                    <img class="kv-payment-chb__icon" src="img/payment/payment_3.png" alt="img">
+                                </picture>
+
+                                <div class="kv-payment-chb__title">Visa</div> <label class="kv-payment-chb__item">
+                                    <input type="radio" name="payment" aria-label="payment" required>
+
+                                    <span class="kv-checkbox__box">                      <svg>                        <use href="img/icons/icons.svg#check"></use>                      </svg></span>
+                                </label>
                             </div>
 
-                            <div class="kv-col-plug"></div>
+                            <div class="kv-payment-chb__drop"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kv-payment__col">
+
+                    <div class="kv-payment__item">
+
+                        <div class="kv-payment-chb">
+
+                            <div class="kv-payment-chb__top">
+                                <picture>
+                                    <source srcset="img/payment/payment_1.webp" type="image/webp">
+
+                                    <img class="kv-payment-chb__icon" src="img/payment/payment_1.png" alt="img">
+                                </picture>
+
+                                <div class="kv-payment-chb__title">Kontoeinzug (SEPA Lastschrift)</div> <label
+                                    class="kv-payment-chb__item"> <input type="radio" checked name="payment"
+                                        aria-label="payment" required>
+
+                                    <span class="kv-checkbox__box">                      <svg>                        <use href="img/icons/icons.svg#check"></use>                      </svg></span>
+                                </label>
+                            </div>
+
+                            <div class="kv-payment-chb__drop kv-payment-chb__drop_active"> <input
+                                    class="kv-payment-chb__input" type="text" name="payment" placeholder="IBAN"> <input
+                                    class="kv-payment-chb__input" type="text" name="payment" placeholder="IBAN"> </div>
+                        </div>
+                    </div>
+
+                    <div class="kv-payment__item">
+
+                        <div class="kv-payment-chb">
+
+                            <div class="kv-payment-chb__top">
+                                <picture>
+                                    <source srcset="img/payment/payment_2.webp" type="image/webp">
+
+                                    <img class="kv-payment-chb__icon" src="img/payment/payment_2.png" alt="img">
+                                </picture>
+
+                                <div class="kv-payment-chb__title">Mastercard</div> <label class="kv-payment-chb__item">
+                                    <input type="radio" name="payment" aria-label="payment" required>
+
+                                    <span class="kv-checkbox__box">                      <svg>                        <use href="img/icons/icons.svg#check"></use>                      </svg></span>
+                                </label>
+                            </div>
+
+                            <div class="kv-payment-chb__drop"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> <input class="kv-payment-chb__input" type="text"
+                                    name="payment" placeholder="IBAN"> </div>
                         </div>
                     </div>
                 </div>
@@ -311,17 +177,20 @@
 
             <div class="kv-content__bottom">
 
-                <div class="kv-content__prev"> <button class="kv-step-button" type="button"> <svg>
-                            <use href="img/icons/icons.svg#back"></use>
-                        </svg>
+                <div class="kv-content__prev">
 
-                        <span>НАЗАД</span> </button> </div>
+                    <div class="kv-content__btn"> <button class="kv-step-button kv-step-button_left" type="button"> <svg
+                                class="kv-step-button__icon">
+                                <use href="img/icons/icons.svg#back"></use>
+                            </svg>
 
-                <div class="kv-content__next"> <button class="kv-step-button" type="button" disabled>
+                            <span class="kv-step-button__text">НАЗАД</span> </button> </div>
+                </div>
 
-                        <span>Вперёд</span> <svg>
-                            <use href="img/icons/icons.svg#next"></use>
-                        </svg> </button> </div>
+                <div class="kv-content__btn kv-content__btn_lg"> <button class="kv-step-button kv-step-button_book"
+                        type="button">
+
+                        <span class="kv-step-button__text">Zahlungspflichtig buchen</span></button> </div>
             </div>
         </div>
     </div>

@@ -1,3 +1,14 @@
+let badges = document.querySelectorAll('.kv-buch-chb__badge');
+for (const badge of badges) {
+    badge.addEventListener('click', (event) => {
+        console.log('OLOL');
+        event.stopPropagation();
+        event.preventDefault();
+        console.log('ZAZAZAZ');
+    });
+}
+
+
 // MODULES
 // include('./modules/_textarea.js');
 // include('./modules/_da.js');

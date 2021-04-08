@@ -435,6 +435,7 @@ body {
 }
 
 .kv-app .kv-form__label,
+.kv-app .kv-form-radio .kv-form-radio__caption,
 .kv-app .kv-step-button__text,
 .kv-app .kv-content__title,
 .kv-app .kv-processing-day-chb .kv-processing-day-chb__text,
@@ -748,6 +749,7 @@ body {
 }
 
 .kv-app .kv-form__item_chb {
+  padding: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1140,7 +1142,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 20px;
+  padding: 8px 20px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
@@ -1209,6 +1211,7 @@ body {
   line-clamp: 1;
   min-width: 0;
   word-break: break-all;
+  display: block;
 }
 
 .kv-app .kv-form-radio .kv-form-radio__text {
@@ -1216,6 +1219,7 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: var(--c-second);
+  display: block;
 }
 
 .kv-app .kv-form-radio #form-chb-mark {

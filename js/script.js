@@ -30,8 +30,8 @@ function resizeElement(containerClass, elmentClass, addClass, breakpoint) {
 
 ['resize', 'load'].forEach(evt =>
     window.addEventListener(evt, () => {
-        resizeElement('.kv-class-tabs', '.kv-class-tab', 'kv-class-tab_bp', 991);
-        resizeElement('.kv-class-tab', '.kv-class-tab__title', 'kv-class-tab__title_hidden', 94);
+        resizeElement('.kv-class-tabs', '.kv-class-tab(data-cq-max-w="94")', 'kv-class-tab_bp', 991);
+        resizeElement('.kv-class-tab(data-cq-max-w="94")', '.kv-class-tab__title', 'kv-class-tab__title(data-cq-max-w="94")_hidden', 94);
         resizeElement('.kv-services', '.kv-classes__item', 'kv-classes__item_bp', 991);
         resizeElement('.kv-services', '.kv-classes', 'kv-classes_bp', 991);
         resizeElement('.kv-services', '.kv-class', 'kv-class_bp', 991);
@@ -44,8 +44,3 @@ function resizeElement(containerClass, elmentClass, addClass, breakpoint) {
 
     }, false)
 );
-
-
-
-
-

@@ -1,46 +1,12 @@
-function resizeElement(containerClass, elmentClass, addClass, breakpoint) {
-    let containers = document.querySelectorAll(containerClass);
-    let elements;
-
-    if (containers) {
-        for (let i = 0; i < containers.length; i++) {
-            let container = containers[i];
-
-            if (containerClass === elmentClass || !elmentClass) {
-                elements = document.querySelectorAll(containerClass);
-            } else {
-                elements = container.querySelectorAll(elmentClass);
-            }
-
-            if (elements) {
-                for (let j = 0; j < elements.length; j++) {
-                    let element = elements[j];
-
-                    if (container.offsetWidth <= breakpoint) {
-                        element.classList.add(addClass);
-                    }
-                    else if (element.classList.contains(addClass)) {
-                        element.classList.remove(addClass);
-                    }
-                }
-            }
-        }
-    }
-}
-
-['resize', 'load'].forEach(evt =>
-    window.addEventListener(evt, () => {
-        resizeElement('.kv-class-tabs', '.kv-class-tab(data-cq-max-w="94")', 'kv-class-tab_bp', 991);
-        resizeElement('.kv-class-tab(data-cq-max-w="94")', '.kv-class-tab__title', 'kv-class-tab__title(data-cq-max-w="94")_hidden', 94);
-        resizeElement('.kv-services', '.kv-classes__item', 'kv-classes__item_bp', 991);
-        resizeElement('.kv-services', '.kv-classes', 'kv-classes_bp', 991);
-        resizeElement('.kv-services', '.kv-class', 'kv-class_bp', 991);
-        resizeElement('.kv-services', '.kv-services', 'kv-services_bp', 991);
-        resizeElement('.kv-services', '.kv-services__item', 'kv-services__item_bp', 991);
-        resizeElement('.kv-class-tabs', '.kv-tabs-tail', 'kv-tabs-tail_bp', 991);
-        resizeElement('.kv-class-tabs', '.kv-class-tabs', 'kv-class-tabs_bp', 991);
-        resizeElement('.kv-services__footer', '.kv-services__prices', 'kv-services__prices_bp', 991);
+(() => { if (typeof window != "undefined") { let r = function (s, n, t, o, e) { let a = `cq-${s}-${n}`; t && !e.hasAttribute(a) ? e.setAttribute(a, "") : o && e.removeAttribute(a) }; var toggleAttribute = r; let w = new ResizeObserver(s => { s.forEach(n => { let { target: t } = n, { offsetWidth: o, offsetHeight: e } = t, { cqMinW: a, cqMaxW: m, cqMinH: E, cqMaxH: u } = t.dataset, q = a && f(a), h = m && f(m), d = E && f(E), i = u && f(u); q == null || q.forEach(c => r("min-w", c, o >= c, o < c, t)), h == null || h.forEach(c => r("max-w", c, o <= c, o > c, t)), d == null || d.forEach(c => r("min-h", c, e >= c, e < c, t)), i == null || i.forEach(c => r("max-h", c, e <= c, e > c, t)) }) }), f = s => JSON.parse(`[${s}]`); Array.from(document.querySelectorAll("[data-cq-min-w],[data-cq-max-w],[data-cq-min-h],[data-cq-max-h]")).forEach(s => { w.observe(s, { box: "border-box" }) }) } })();
+;
 
 
-    }, false)
-);
+
+
+
+
+
+
+
+

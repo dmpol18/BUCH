@@ -466,52 +466,6 @@ body {
   white-space: nowrap;
 }
 
-.kv-app .text {
-  font-family: var(--fnt-main);
-  font-weight: 400;
-  color: var(--c-second);
-  line-height: 1.33;
-}
-
-.kv-app .text.text_mn {
-  font-size: 12px;
-}
-
-.kv-app .text.text_sm {
-  font-size: 15px;
-}
-
-.kv-app .text.text_md {
-  font-size: 18px;
-}
-
-.kv-app .text.text_lg {
-  font-size: 20px;
-}
-
-.kv-app .text.text_xl {
-  font-size: 24px;
-}
-
-.kv-app .text.text_light {
-  color: var(--c-second_dark);
-}
-
-.kv-app .text b {
-  letter-spacing: inherit;
-  line-height: inherit;
-  font-size: inherit;
-  font-weight: 700;
-}
-
-.kv-app .kv-text_center {
-  text-align: center;
-}
-
-.kv-app .text_right {
-  text-align: right;
-}
-
 .kv-app .kv-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,7 +499,7 @@ body {
           flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
 }
 
-.kv-app T .kv-grid {
+.kv-app .kv-grid {
   display: grid;
   --kv-grd: 500px;
   grid-template-columns: repeat(auto-fit, minmax(var(--kv-grd), 1fr));
@@ -874,20 +828,6 @@ body {
 
 .kv-app .kv-form-title_hv:hover {
   color: #FF7C00;
-}
-
-.kv-app .kv-form__col_sm {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 4);
-          flex: 0 1 calc(100% / 4);
-  max-width: calc(100 / 4);
-}
-
-.kv-app .kv-form__col_sm {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 3);
-          flex: 0 1 calc(100% / 3);
-  max-width: calc(100 / 3);
 }
 
 .kv-app .kv-user-text s,
@@ -2604,9 +2544,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .kv-app .kv-processing-days__item {
@@ -2681,6 +2618,13 @@ body {
           flex: 1 1 0;
   border-radius: 0 0 6px 6px;
   border: 3px solid var(--c-disabled);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .kv-app .kv-processing-day .kv-processing-day__item {
@@ -2697,10 +2641,13 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 19px;
-  text-align: justify;
   color: var(--c-second);
+  text-align: center;
   display: none;
   padding: 20px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
 }
 
 .kv-app .kv-processing-day .kv-processing-day__text:last-child {
@@ -2738,7 +2685,19 @@ body {
 }
 
 .kv-app .kv-processing-day.kv-processing-day_disabled .kv-processing-day__text {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .kv-app .kv-processing-day.kv-processing-day_disabled .kv-processing-day__body > *:not(.kv-processing-day__text) {

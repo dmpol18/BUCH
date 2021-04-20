@@ -4020,13 +4020,13 @@ body {
   display: block;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class-tab {
+.kv-app [max-width~="991px"] .kv-class-tab {
   border-radius: 6px;
   border-bottom: 4px solid var(--c-second);
   position: relative;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class-tab::after {
+.kv-app [max-width~="991px"] .kv-class-tab::after {
   content: '';
   position: absolute;
   bottom: 0;

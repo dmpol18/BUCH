@@ -524,11 +524,43 @@ body {
   display: none;
 }
 
+.kv-app .overflow-x-auto {
+  overflow-x: auto;
+}
+
+.kv-app .overflow-x-auto::-webkit-scrollbar {
+  width: 4px;
+  height: 12px;
+}
+
+.kv-app .overflow-x-auto::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.kv-app .overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: var(--c-prim);
+  border: 3px solid transparent;
+  border-radius: 6px;
+  background-clip: content-box;
+  opacity: .6;
+}
+
+.kv-app .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+  background-clip: content-box;
+}
+
+.kv-app .mb-20 {
+  margin-bottom: 20px;
+}
+
 .kv-app .kv-form {
   --gap: 10px;
   --height: 60px;
   --radius: 6px;
   --border: 1px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .kv-app .kv-form__row {
@@ -538,7 +570,7 @@ body {
           align-items: flex-start;
 }
 
-.kv-app .kv-from__col {
+.kv-app .kv-form__col {
   --kv-clg: 1;
   --kv-cls: 1;
   --kv-clb: 700px;
@@ -547,7 +579,16 @@ body {
           flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
 }
 
-.kv-app .kv-from__col_2 {
+.kv-app .kv-form__col_half {
+  --kv-clg: 0;
+  --kv-cls: 1;
+  --kv-clb: 50%;
+  -webkit-box-flex: var(--kv-clg);
+      -ms-flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
+          flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
+}
+
+.kv-app .kv-form__col_2 {
   --kv-clg: 2;
   --kv-cls: 1;
   --kv-clb: 700px;
@@ -595,7 +636,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
-  padding: 7px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -619,7 +659,7 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--c-second_dark);
-  padding: 9px 20px 0px;
+  padding: 28px 20px 7px;
 }
 
 .kv-app .kv-form__item > input::-webkit-input-placeholder, .kv-app .kv-form__item > textarea::-webkit-input-placeholder {
@@ -669,25 +709,25 @@ body {
 }
 
 .kv-app .kv-form__item input:not(:-moz-placeholder-shown) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:-ms-input-placeholder) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:placeholder-shown) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:focus ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
@@ -780,7 +820,7 @@ body {
 }
 
 .kv-app .kv_is-focused .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
@@ -824,6 +864,7 @@ body {
 .kv-app .kv-form-title_hv {
   text-decoration: underline;
   cursor: pointer;
+  font-size: 12px;
 }
 
 .kv-app .kv-form-title_hv:hover {
@@ -1912,6 +1953,8 @@ body {
 .kv-app .kv-content {
   padding-top: 30px;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .kv-app .kv-content__header {
@@ -2912,6 +2955,9 @@ body {
   line-height: 25px;
   color: #00B3D4;
   text-transform: uppercase;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .kv-app .kv-add,
@@ -3283,6 +3329,7 @@ body {
 }
 
 .kv-app .kv-review-members {
+  width: 100%;
   background: #FFFFFF;
   border: 1px solid var(--c-disabled_dark);
   -webkit-box-sizing: border-box;
@@ -3314,14 +3361,10 @@ body {
 }
 
 .kv-app .kv-review-members__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-width: 992px;
   background-color: #fff;
 }
 
-.kv-app .kv-review-members__row:nth-child(odd):not(:first-child) {
+.kv-app .kv-review-members__row:nth-child(even) {
   background-color: #F4F4F4;
 }
 
@@ -3335,50 +3378,13 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--c-second_dark);
+  word-break: keep-all;
 }
 
-.kv-app .kv-review-members__col_1 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 54px;
-          flex: 0 0 54px;
-}
-
-.kv-app .kv-review-members__col_2 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 1257 * 340);
-          flex: 0 1 calc(100% / 1257 * 340);
-  max-width: calc(100% / 1257 * 340);
-  min-width: 0;
-}
-
-.kv-app .kv-review-members__col_3 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 1257 * 218);
-          flex: 0 1 calc(100% / 1257 * 218);
-  max-width: calc(100% / 1257 * 218);
-  min-width: 0;
-}
-
-.kv-app .kv-review-members__col_4 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 1257 * 280);
-          flex: 0 1 calc(100% / 1257 * 280);
-  max-width: calc(100% / 1257 * 280);
-  min-width: 0;
-}
-
-.kv-app .kv-review-members__col_5 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(100% / 1257 * 310);
-          flex: 0 1 calc(100% / 1257 * 310);
-  max-width: calc(100% / 1257 * 310);
-  min-width: 0;
-}
-
-.kv-app .kv-review-members__col_6 {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40px;
-          flex: 0 0 40px;
+.kv-app .kv-review-members__item:first-child,
+.kv-app .kv-review-members__item:last-child {
+  width: 1px;
+  text-align: center;
 }
 
 .kv-app .kv-review-members__item_title {
@@ -3387,11 +3393,12 @@ body {
   line-height: 25px;
   color: var(--c-second_dark);
   padding: 12px 15px;
-  width: 100%;
+  word-break: keep-all;
 }
 
 .kv-app .kv-review-members__item_edit {
   padding: 10px;
+  margin-left: auto;
 }
 
 .kv-app .kv-review-members__col_mn {
@@ -3402,6 +3409,11 @@ body {
 
 .kv-app .kv-review > *:last-child {
   margin-bottom: 0;
+}
+
+.kv-app .kv-review__row {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .kv-app .kv-review__col {
@@ -3444,6 +3456,7 @@ body {
           box-sizing: border-box;
   border-radius: 6px;
   padding: 0 10px;
+  height: 100%;
 }
 
 .kv-app .kv-review-card_light {
@@ -3493,9 +3506,6 @@ body {
   line-height: 30px;
   color: var(--c-second_dark);
   margin-bottom: 20px;
-}
-
-.kv-app .kv-review-card__text {
   margin-bottom: 10px;
 }
 
@@ -3597,6 +3607,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .kv-app .kv-payment__col {
@@ -3931,13 +3943,15 @@ body {
 .kv-app .kv-class-tab {
   border-radius: 6px 6px 0 0;
   background-color: var(--c-prim);
-  height: 88px;
+  height: 74px;
+  /*88*/
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  padding: 28px 10px 12px;
+  padding: 12px 10px 12px;
+  /*28*/
 }
 
 .kv-app .kv-class-tab,
@@ -3962,10 +3976,11 @@ body {
 
 .kv-app .kv-class-tab__info {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 18px;
-  height: 18px;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  padding: 10px 10px 2px 2px;
   fill: #fff;
 }
 

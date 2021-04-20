@@ -709,25 +709,25 @@ body {
 }
 
 .kv-app .kv-form__item input:not(:-moz-placeholder-shown) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:-ms-input-placeholder) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:placeholder-shown) ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:focus ~ .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
@@ -820,7 +820,7 @@ body {
 }
 
 .kv-app .kv_is-focused .kv-form__label {
-  top: 7px;
+  top: 3px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }

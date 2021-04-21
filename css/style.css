@@ -526,20 +526,20 @@ body {
   display: none;
 }
 
-.kv-app .overflow-x-auto {
+.kv-app .kv-overflow-x-auto {
   overflow-x: auto;
 }
 
-.kv-app .overflow-x-auto::-webkit-scrollbar {
+.kv-app .kv-overflow-x-auto::-webkit-scrollbar {
   width: 4px;
   height: 12px;
 }
 
-.kv-app .overflow-x-auto::-webkit-scrollbar-track {
+.kv-app .kv-overflow-x-auto::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-.kv-app .overflow-x-auto::-webkit-scrollbar-thumb {
+.kv-app .kv-overflow-x-auto::-webkit-scrollbar-thumb {
   background-color: var(--c-prim);
   border: 3px solid transparent;
   border-radius: 6px;
@@ -547,13 +547,17 @@ body {
   opacity: .6;
 }
 
-.kv-app .overflow-x-auto::-webkit-scrollbar-thumb:hover {
+.kv-app .kv-overflow-x-auto::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   background-clip: content-box;
 }
 
-.kv-app .mb-20 {
+.kv-app .kv-block-mb {
   margin-bottom: 20px;
+}
+
+.kv-app .kv-display-none {
+  display: none !important;
 }
 
 .kv-app .kv-form {
@@ -3623,7 +3627,7 @@ body {
   padding: 16px 10px;
 }
 
-.kv-app .kv-review-card__body *:last-child {
+.kv-app .kv-review-card__body > *:last-child {
   margin-bottom: 0;
 }
 
@@ -3808,12 +3812,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-clamp: 1;
-  min-width: 0;
+  padding-right: 5px;
   min-width: 0px;
 }
 
@@ -4372,6 +4371,7 @@ body {
   line-height: 19px;
   color: #172F37;
   max-width: 100%;
+  word-break: normal;
 }
 
 .kv-app .kv-services-price__price span {
@@ -4454,16 +4454,18 @@ body {
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price {
   display: none;
-}
-
-.kv-app.kv-app[max-width~="991px"] .kv-services-price_active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 7px;
+  min-width: 100px;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price_active .kv-services-price__person {
   display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-services-price_showed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app .kv-alert {
@@ -4550,10 +4552,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.kv-app .kv-services-price_top {
-  display: none !important;
 }
 
 .kv-app .kv-service-pack_long .kv-services-price_top {

@@ -3032,6 +3032,10 @@ body {
   cursor: auto;
 }
 
+.kv-app .kv-processing-day-chb input[disabled]:checked ~ .kv-processing-day-chb__inner {
+  background-color: black;
+}
+
 .kv-app .kv-form-card {
   background-color: var(--c-prim_light);
   padding: 20px;
@@ -3663,6 +3667,10 @@ body {
   margin-right: 10px;
 }
 
+.kv-app .kv-customer__tel {
+  margin-right: 2em;
+}
+
 .kv-app.kv-app[max-width~="640px"] .kv-review-card__header {
   padding: 15px 0;
 }
@@ -4228,6 +4236,20 @@ body {
   display: flex;
 }
 
+.kv-app .kv-class-tabs__list .kv-services-price {
+  display: none;
+}
+
+.kv-app .kv-class-tabs__list .kv-services-price_top {
+  display: none !important;
+}
+
+.kv-app .kv-class-tabs__list.kv-class-tabs__list_show-price .kv-services-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .kv-app .kv-class-tabs_left {
   --kv-clg: 10;
   --kv-cls: 1;
@@ -4253,6 +4275,12 @@ body {
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
   padding-left: 0;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-class-tabs__list .kv-services-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app .kv-tabs-tail {
@@ -4360,8 +4388,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px;
-  border-radius: 0 0 var(--kv-class-rad) var(--kv-class-rad);
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 0 0;
   border: 2px solid transparent;
   border-top: 0px solid transparent;
 }

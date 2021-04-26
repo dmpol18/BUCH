@@ -4687,8 +4687,8 @@ body {
 
 .kv-app .kv-result .kv-result__main-icon svg {
   fill: var(--c-success);
-  width: 216px;
-  height: 216px;
+  width: 160px;
+  height: 160px;
 }
 
 .kv-app .kv-result .kv-result__title {

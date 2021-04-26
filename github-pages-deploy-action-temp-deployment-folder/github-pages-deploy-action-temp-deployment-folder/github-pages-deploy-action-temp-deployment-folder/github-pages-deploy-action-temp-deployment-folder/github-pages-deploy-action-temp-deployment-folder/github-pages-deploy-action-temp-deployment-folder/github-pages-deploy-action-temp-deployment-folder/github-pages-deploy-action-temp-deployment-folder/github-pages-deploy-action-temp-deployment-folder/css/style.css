@@ -559,8 +559,6 @@ body {
   --height: 60px;
   --radius: 6px;
   --border: 1px;
-  margin-left: -10px;
-  margin-right: -10px;
 }
 
 .kv-app .kv-form__row {
@@ -709,25 +707,25 @@ body {
 }
 
 .kv-app .kv-form__item input:not(:-moz-placeholder-shown) ~ .kv-form__label {
-  top: 3px;
+  top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:-ms-input-placeholder) ~ .kv-form__label {
-  top: 3px;
+  top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:not(:placeholder-shown) ~ .kv-form__label {
-  top: 3px;
+  top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
 
 .kv-app .kv-form__item input:focus ~ .kv-form__label {
-  top: 3px;
+  top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
@@ -820,7 +818,7 @@ body {
 }
 
 .kv-app .kv_is-focused .kv-form__label {
-  top: 3px;
+  top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
 }
@@ -1953,8 +1951,6 @@ body {
 .kv-app .kv-content {
   padding-top: 30px;
   padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .kv-app .kv-content__header {

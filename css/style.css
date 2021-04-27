@@ -1419,6 +1419,21 @@ body {
   left: 2px;
 }
 
+.kv-app .kv-step-buttons-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kv-app .kv-step-buttons-centered .kv-step-button {
+  margin: 0.5rem 1rem;
+}
+
 .kv-app .kv-step-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1451,6 +1466,7 @@ body {
 
 .kv-app .kv-step-button.kv-step-button_success {
   background-color: var(--c-success);
+  color: var(--c-main);
 }
 
 .kv-app .kv-step-button.kv-step-button_success .kv-step-button__text {
@@ -1459,6 +1475,11 @@ body {
 
 .kv-app .kv-step-button.kv-step-button_success .kv-step-button__icon {
   fill: var(--c-main);
+}
+
+.kv-app .kv-step-button.kv-step-button_second {
+  background-color: var(--c-second);
+  color: var(--c-main);
 }
 
 .kv-app .kv-step-button:not(:last-child) {
@@ -2700,9 +2721,14 @@ body {
 }
 
 .kv-app .kv-processing-days__inner {
+  padding: 0.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.kv-app .kv-processing-days__inner.kv-processing-days__inner-showed-action-label .kv-processing-day__action-label {
+  display: block;
 }
 
 .kv-app .kv-processing-days__item {
@@ -2790,8 +2816,20 @@ body {
   opacity: .6;
 }
 
-.kv-app .kv-processing-day .kv-processing-day__item:not(:last-child) {
+.kv-app .kv-processing-day .kv-processing-day__item:not(:last-of-type) {
   border-bottom: 1px solid var(--c-disabled_dark);
+}
+
+.kv-app .kv-processing-day .kv-processing-day__action-label {
+  display: none;
+  padding: 0.5em;
+  text-align: center;
+  background-color: var(--c-hot);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0 0 6px 6px;
+  margin: 0 -3px -3px;
+  font-size: 20px;
 }
 
 .kv-app .kv-processing-day .kv-processing-day__text {

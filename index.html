@@ -637,6 +637,40 @@
                 </div>
             </div>
 
+            <!-- step pre 2-->
+            <div class="kv-content">
+                <div class="kv-content__header">
+                    <div class="kv-content__icon">
+                        <svg>
+                            <use href="img/icons/kv-icons.svg#step_1"></use>
+                        </svg>
+                    </div>
+                    <div class="kv-content__title">Выберите подтип визы</div>
+                </div>
+                <div class="kv-content__body">
+                    <div class="kv-processing__row">
+                        <div class="kv-processing__item">
+                            <div class="kv-processing__label">Гражданство:</div>
+                            <div class="kv-processing__select kv-select">
+                                <div class="kv-select__badge">
+                                    <svg class="kv-select__icon">
+                                        <use href="img/icons/kv-icons.svg#home"></use>
+                                    </svg>
+                                </div>
+                                <select class="kv-select__input" name="form[]" id="select" required>
+                                    <option value="1" selected="selected">Туристическая</option>
+                                    <option value="2">Бизнес</option>
+                                    <option value="3">Альтернативная</option>
+                                </select>
+                                <svg class="kv-selct__arrow">
+                                    <use href="img/icons/kv-icons.svg#arrow_down"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- step 2-->
             <div class="kv-content">
                 <div class="kv-content__header">
@@ -899,7 +933,8 @@
 
                         <!-- Processing days-->
                         <div class="kv-processing-days kv-processing-days_slide">
-                            <div class="kv-processing-days__inner">
+                            <div
+                                class="kv-processing-days__inner kv-processing-days__inner-showed-action-label">
 
                                 <!-- Processing day-->
                                 <div class="kv-processing-days__item">
@@ -1062,6 +1097,8 @@
                                                     </span>
                                                 </label>
                                             </div>
+                                            <a class="kv-processing-day__action-label" href="#">
+                                                Kaufen</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1304,6 +1341,8 @@
                                                     </span>
                                                 </label>
                                             </div>
+                                            <a class="kv-processing-day__action-label" href="#">
+                                                Kaufen</a>
                                         </div>
                                     </div>
                                 </div>

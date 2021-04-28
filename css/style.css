@@ -16,29 +16,6 @@
   font-style: normal;
 }
 
-html,
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: silver;
-  width: 100%;
-  font-size: 100%;
-  position: relative;
-  text-rendering: optimizeSpeed;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: none !important;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  min-height: 100vh;
-}
-
 .kv-app {
   --fnt-main: 'Open Sans',
         sans-serif;
@@ -556,7 +533,7 @@ body {
   margin-bottom: 20px;
 }
 
-.kv-app .kv-display-none {
+.kv-app .kv-d-none {
   display: none !important;
 }
 
@@ -570,6 +547,16 @@ body {
 
 .kv-app .kv-text-bold {
   font-weight: bold;
+}
+
+.kv-app .kv-mb-30 {
+  margin-bottom: 30px;
+}
+
+.kv-app .kv-flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .kv-app .kv-form {
@@ -2225,6 +2212,19 @@ body {
   margin-bottom: 0;
 }
 
+.kv-app .kv-horizontal-labeling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.kv-app .kv-horizontal-labeling .kv-label {
+  margin-right: 10px;
+}
+
 .kv-app .kv-select {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2274,7 +2274,7 @@ body {
           box-sizing: border-box;
   border-radius: 0px 6px 6px 0px;
   height: 100%;
-  padding: 7px 32px 7px 10px;
+  padding: 1px 32px 1px 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
@@ -2287,7 +2287,17 @@ body {
   cursor: pointer;
   min-width: 0;
   width: 100%;
-  max-width: 90%;
+}
+
+.kv-app.kv-app[max-width~="640px"] .kv-horizontal-labeling {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.kv-app.kv-app[max-width~="640px"] .kv-horizontal-labeling .kv-label {
+  margin: 0;
 }
 
 .kv-app .kv-buch-chb {
@@ -2498,6 +2508,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-top: 10px;
 }
 
 .kv-app .kv-staying .kv-staying__info:not(:last-child) {
@@ -2946,8 +2957,8 @@ body {
   font-weight: bold;
 }
 
-.kv-app .kv-calc-block > * {
-  margin-bottom: 20px;
+.kv-app .kv-calc-block .kv-calc-block__info {
+  margin-top: 20px;
 }
 
 .kv-app .kv-calc-block > *:last-child {

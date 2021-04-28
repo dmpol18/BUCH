@@ -820,7 +820,10 @@
   color: var(--c-second_dark);
   padding: 0 40px 0 20px;
   cursor: pointer;
-  padding-top: 10px;
+}
+
+.kv-app .kv-form__sel option[disabled] {
+  display: none;
 }
 
 .kv-app .kv_is-focused .kv-form__label {
@@ -855,6 +858,19 @@
   font-size: 18px;
   line-height: 25px;
   color: var(--c-second_dark);
+}
+
+.kv-app .kv-form__sublabel {
+  position: absolute;
+  bottom: 3px;
+  left: 20px;
+  font-size: 14px;
+  z-index: 0;
+  color: var(--c-disabled_dark);
+}
+
+.kv-app.kv-app .kv-form__item input:focus ~ .kv-form__sublabel {
+  display: none;
 }
 
 .kv-app .kv-form-title {
@@ -1431,7 +1447,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 11px 20px;
+  padding: 8px 20px;
   background-color: var(--c-disabled);
   border-radius: 6px;
   height: 50px;
@@ -3094,7 +3110,7 @@
 }
 
 .kv-app .kv-processing-day-chb input[disabled]:checked ~ .kv-processing-day-chb__inner {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .kv-app .kv-form-card {

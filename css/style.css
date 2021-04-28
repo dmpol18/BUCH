@@ -2305,6 +2305,7 @@
   cursor: pointer;
   min-width: 0;
   width: 100%;
+  white-space: nowrap;
 }
 
 .kv-app.kv-app[max-width~="640px"] .kv-horizontal-labeling {

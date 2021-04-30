@@ -570,9 +570,9 @@
 
 .kv-app .kv-form__row {
   margin: 0 calc(-1 * var(--gap));
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .kv-app .kv-form__col {
@@ -635,6 +635,8 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .kv-app .kv-form__item {
@@ -3585,7 +3587,7 @@
 }
 
 .kv-app .kv-review-members__item {
-  padding: 12px 15px;
+  padding: 10px 10px;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
@@ -3636,11 +3638,8 @@
   -webkit-box-flex: var(--kv-clg);
       -ms-flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
           flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 10px);
-          flex: 0 0 calc(50% - 10px);
   min-width: 0;
-  margin-bottom: 15px;
+  margin: 0 10px 15px;
 }
 
 .kv-app .kv-review__item:not(:last-child) {

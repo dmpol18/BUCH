@@ -888,7 +888,7 @@
 .kv-app .kv-form-title_hv {
   text-decoration: underline;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .kv-app .kv-form-title_hv:hover {
@@ -3443,6 +3443,10 @@
   border-color: var(--c-prim);
 }
 
+.kv-app.kv-app[max-width~="991px"] .kv-class .kv-class__item_active {
+  border-color: var(--c-success);
+}
+
 .kv-app .kv-price {
   font-weight: bold;
   font-size: 30px;
@@ -3549,6 +3553,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+  border-collapse: initial;
   overflow-x: auto;
 }
 
@@ -3915,6 +3920,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-right: 15px;
 }
 
 .kv-app .kv-payment-chb__item,
@@ -4348,10 +4354,6 @@
   display: none;
 }
 
-.kv-app .kv-class-tabs__list .kv-services-price_top {
-  display: none !important;
-}
-
 .kv-app .kv-class-tabs__list.kv-class-tabs__list_show-price .kv-services-price {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4588,8 +4590,17 @@
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 7px;
   min-width: 100px;
+  border-bottom: 2px solid transparent;
+  border-radius: 0 0 6px 6px;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-services-price.kv-services-price_active {
+  border-bottom-color: var(--c-success);
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price_active .kv-services-price__person {

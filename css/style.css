@@ -585,7 +585,7 @@
 }
 
 .kv-app .kv-form__col_half {
-  --kv-clg: 1;
+  --kv-clg: 0;
   --kv-cls: 1;
   --kv-clb: 50%;
   -webkit-box-flex: var(--kv-clg);
@@ -893,6 +893,15 @@
 
 .kv-app .kv-form-title_hv:hover {
   color: #FF7C00;
+}
+
+.kv-app.kv-app[max-width~="640px"] .kv-form__col_half {
+  --kv-clg: 1;
+  --kv-cls: 1;
+  --kv-clb: 100%;
+  -webkit-box-flex: var(--kv-clg);
+      -ms-flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
+          flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
 }
 
 .kv-app.kv-app[max-width~="640px"] .kv-form {

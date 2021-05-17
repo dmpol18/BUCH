@@ -3430,8 +3430,7 @@
   display: none;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class .kv-class__item_showed,
-.kv-app.kv-app[max-width~="991px"] .kv-class .kv-class__item_active {
+.kv-app.kv-app[max-width~="991px"] .kv-class .kv-class__item_showed {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -634,6 +634,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
+  padding: 7px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,7 +658,7 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: var(--c-second_dark);
-  padding: 28px 20px 7px;
+  padding: 9px 20px 0px;
 }
 
 .kv-app .kv-form__item > input::-webkit-input-placeholder, .kv-app .kv-form__item > textarea::-webkit-input-placeholder {

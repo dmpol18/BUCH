@@ -4389,6 +4389,24 @@
   margin-left: 10px;
 }
 
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tabs__item {
+  margin-bottom: 0;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tabs .kv-class-tabs_right {
+  border-bottom: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tab::after {
+  display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price__btn {
+  font-size: 12px;
+  padding: 6px 6px;
+  height: 35px;
+}
+
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs .kv-class-tabs_right {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
@@ -4787,7 +4805,15 @@
           flex: 0 0 110px;
 }
 
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__price {
+  margin-left: 5px;
+}
+
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__tail {
+  display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_top {
   display: none;
 }
 
@@ -4831,6 +4857,11 @@
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed {
   border-color: var(--c-prim);
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed:before,
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed:after {
+  display: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__prices {

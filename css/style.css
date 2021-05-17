@@ -4366,10 +4366,6 @@
   display: flex;
 }
 
-.kv-app .kv-class-tabs__list .kv-services-price {
-  display: none;
-}
-
 .kv-app .kv-class-tabs_left {
   --kv-clg: 10;
   --kv-cls: 1;

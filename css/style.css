@@ -4649,9 +4649,19 @@
   border-bottom: 1px solid var(--c-disabled_dark);
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price {
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price.kv-services-price_active {
+  border: 2px solid var(--c-success);
   border-bottom: none;
-  border-radius: 0;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__footer .kv-services-price_showed:not(.kv-services-price_active) {
+  border: 2px solid var(--c-prim);
+  border-top: 1px solid var(--c-disabled_dark);
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__footer .kv-services-price.kv-services-price_active {
+  border: 2px solid var(--c-success);
+  border-top: none;
 }
 
 .kv-app .kv-alert {

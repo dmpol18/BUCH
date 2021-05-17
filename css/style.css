@@ -3322,13 +3322,18 @@
 .kv-app .kv-class .kv-class__item_active {
   opacity: 1;
   pointer-events: auto;
-  border-left: 2px solid var(--c-success);
-  border-right: 2px solid var(--c-success);
+  border-left: 2px solid var(--c-prim);
+  border-right: 2px solid var(--c-prim);
 }
 
 .kv-app .kv-class .kv-class__item_showed .kv-class__caption,
 .kv-app .kv-class .kv-class__item_active .kv-class__caption {
   display: block;
+}
+
+.kv-app .kv-class .kv-class__item_active {
+  border-left: 2px solid var(--c-success);
+  border-right: 2px solid var(--c-success);
 }
 
 .kv-app .kv-class .kv-class__item_add {

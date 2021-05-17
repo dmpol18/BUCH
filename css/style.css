@@ -4640,8 +4640,7 @@
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price_showed:not(.kv-services-price_active) {
   border: 2px solid var(--c-prim);
-  border-top: none;
-  border-bottom: none;
+  border-bottom: 1px solid var(--c-disabled_dark);
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price {

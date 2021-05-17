@@ -3434,6 +3434,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 1;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-class .kv-class__item_showed {

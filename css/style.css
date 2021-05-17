@@ -4268,7 +4268,6 @@
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item {
   position: relative;
   margin-bottom: 6px;
-  pointer-events: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item::before {

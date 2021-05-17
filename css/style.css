@@ -3284,10 +3284,6 @@
   border-top: none;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-services__item .kv-services__item-inner:first-child {
-  border-top: 1px solid transparent;
-}
-
 .kv-app .kv-class {
   --kv-class-rad: 0 0 6px 6px;
   border-radius: var(--kv-class-rad);
@@ -3873,6 +3869,10 @@
   padding: 15px 20px;
 }
 
+.kv-app .kv-payment-chb .kv-form-radio {
+  padding: 0;
+}
+
 .kv-app .kv-payment-chb__drop {
   max-height: 0px;
   height: auto;
@@ -4189,8 +4189,7 @@
   /*28*/
 }
 
-.kv-app .kv-class-tab__body,
-.kv-app .kv-class-tab__body * {
+.kv-app .kv-class-tab__body .kv-class-tab__info * {
   cursor: pointer;
 }
 
@@ -4258,20 +4257,24 @@
   display: block;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class-tab {
-  border-radius: 6px 6px 0 0;
+.kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item {
   position: relative;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class-tab::before {
+.kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item::before {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: 0px;
   border-radius: 0 0 6px 6px;
   left: 0;
   width: 100%;
   border-bottom: 4px solid var(--c-second);
   display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-class-tab {
+  border-radius: 6px 6px 0 0;
+  position: relative;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-class-tab::after {
@@ -4296,8 +4299,13 @@
   opacity: 1;
 }
 
+.kv-app .kv-class-tab[max-width~="94px"] .kv-class-tab__body {
+  padding-top: 36px;
+  height: auto;
+}
+
 .kv-app .kv-class-tab[max-width~="94px"] .kv-class-tab__title {
-  display: none;
+  font-size: 14px;
 }
 
 .kv-app .kv-class-tabs {
@@ -4496,7 +4504,7 @@
 }
 
 .kv-app .kv-services-price__price {
-  font-size: 14px;
+  font-size: 19px;
   line-height: 19px;
   color: #172F37;
   max-width: 100%;
@@ -4504,7 +4512,7 @@
 }
 
 .kv-app .kv-services-price__price span {
-  font-size: 14px;
+  font-size: 19px;
   line-height: 19px;
 }
 
@@ -4567,12 +4575,17 @@
   color: var(--c-second);
 }
 
+.kv-app .kv-services-price_active .kv-services-price__price span {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .kv-app .kv-services-price_active .kv-services-price__btn {
   display: none;
 }
 
 .kv-app .kv-services-price_active_top {
-  border-bottom: 0px solid var(--c-success);
+  border: none;
   border-radius: 0;
 }
 
@@ -4580,17 +4593,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 7px;
+  padding: 10px 7px;
   border-bottom: 2px solid var(--c-disabled);
   border-radius: 0 0 6px 6px;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price.kv-services-price_active {
-  border-bottom-color: var(--c-success);
+  border: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs__list .kv-services-price.kv-services-price_active .kv-services-price__price {
-  font-size: 14px;
+  font-size: 19px;
   line-height: 19px;
 }
 
@@ -4600,6 +4613,10 @@
 
 .kv-app.kv-app[max-width~="991px"] .kv-services-price_active .kv-services-price__person {
   font-size: 10px;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item .kv-services-price__btn {
+  display: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price,
@@ -4723,16 +4740,13 @@
   border-bottom: none;
 }
 
+.kv-app .kv-service-pack_empty .kv-service-pack__header,
 .kv-app .kv-service-pack_empty .kv-service-pack__services {
   display: none;
 }
 
-.kv-app .kv-service-pack_empty .kv-service-pack__tabs {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+.kv-app .kv-service-pack_empty .kv-class-tabs,
+.kv-app .kv-service-pack_empty .kv-service-pack__tabs,
 .kv-app .kv-service-pack_empty .kv-service-pack__footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -4823,6 +4837,14 @@
           justify-content: center;
 }
 
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__header {
+  margin-top: 10px;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-service-pack__price {
+  border-radius: 6px 6px 0 0;
+}
+
 .kv-app .kv-result {
   color: var(--c-second_dark);
 }
@@ -4879,4 +4901,7 @@
 
 .kv-app {
   background-color: #fff;
+  min-width: 280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }

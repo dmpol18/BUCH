@@ -4311,11 +4311,11 @@
   border-radius: 0;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-class-tab__body {
+.kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item {
   opacity: 0.5;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-services-price_showed .kv-class-tab__body {
+.kv-app.kv-app[max-width~="991px"] .kv-services-price_showed {
   opacity: 1;
 }
 
@@ -4517,7 +4517,7 @@
 }
 
 .kv-app .kv-tabs-tail_center .kv-tabs-tail__line {
-  height: 16px;
+  height: 18px;
   width: 2px;
 }
 
@@ -4627,7 +4627,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 7px;
+  padding: 10px 2px;
   border-bottom: 2px solid var(--c-disabled);
   border-radius: 0 0 6px 6px;
 }

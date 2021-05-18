@@ -3284,6 +3284,10 @@
   border-top: none;
 }
 
+.kv-app .kv-services__item:first-child .kv-class__item {
+  border-top: 1px solid var(--c-disabled_dark);
+}
+
 .kv-app .kv-class {
   --kv-class-rad: 0 0 6px 6px;
   border-radius: var(--kv-class-rad);
@@ -3318,17 +3322,20 @@
   background-color: var(--c-prim_light);
 }
 
-.kv-app .kv-class .kv-class__item_showed,
 .kv-app .kv-class .kv-class__item_active {
   opacity: 1;
   pointer-events: auto;
-  border-left: 2px solid var(--c-success);
-  border-right: 2px solid var(--c-success);
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
 }
 
-.kv-app .kv-class .kv-class__item_showed .kv-class__caption,
 .kv-app .kv-class .kv-class__item_active .kv-class__caption {
   display: block;
+}
+
+.kv-app .kv-class .kv-class__item_active {
+  border-left: 2px solid var(--c-success);
+  border-right: 2px solid var(--c-success);
 }
 
 .kv-app .kv-class .kv-class__item_add {
@@ -4262,6 +4269,7 @@
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item {
   position: relative;
   margin-bottom: 6px;
+  pointer-events: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-class-tabs__item::before {

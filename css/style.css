@@ -4385,8 +4385,8 @@
   margin-left: 10px;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tabs__item {
-  margin-bottom: 0;
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tabs__item::before {
+  display: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tabs .kv-class-tabs_right {
@@ -4789,10 +4789,14 @@
           justify-content: center;
 }
 
+.kv-app .kv-services-price_top {
+  display: none;
+}
+
 .kv-app .kv-service-pack_long .kv-services-price_top {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__prices {
@@ -4878,6 +4882,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__footer .kv-services-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header {

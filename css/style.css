@@ -4805,6 +4805,10 @@
           flex: 0 0 110px;
 }
 
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tab__body {
+  opacity: 1;
+}
+
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__price {
   margin-left: 5px;
 }
@@ -4814,7 +4818,15 @@
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_top {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_top .kv-services-price__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-class-tab {
@@ -4849,13 +4861,17 @@
   margin-left: 0;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed {
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_showed {
   border-color: var(--c-prim);
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed:before,
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price.kv-services-price_showed:after {
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_showed:before,
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_showed:after {
   display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-services-price_showed .kv-services-price_top {
+  border-radius: 0 0 6px 6px;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__prices {
@@ -4874,20 +4890,9 @@
           justify-content: center;
 }
 
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__header {
-  display: none;
-}
-
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__header,
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__footer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__footer .kv-services-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header {

@@ -3634,17 +3634,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 15px;
 }
 
 .kv-app .kv-review__col {
   --kv-clg: 1;
   --kv-cls: 1;
-  --kv-clb: 767px;
+  --kv-clb: 50%;
   -webkit-box-flex: var(--kv-clg);
       -ms-flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
           flex: var(--kv-clg) var(--kv-cls) calc((var(--kv-clb) - 100%) * 999);
   min-width: 0;
-  margin: 0 10px 15px;
+  margin: 0 0 15px;
 }
 
 .kv-app .kv-review__item:not(:last-child) {
@@ -4674,7 +4675,7 @@
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price_showed:not(.kv-services-price_active) {
   border: 2px solid var(--c-prim);
-  border-bottom: 1px solid var(--c-disabled_dark);
+  border-bottom: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header .kv-services-price.kv-services-price_active {
@@ -4684,7 +4685,7 @@
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__footer .kv-services-price_showed:not(.kv-services-price_active) {
   border: 2px solid var(--c-prim);
-  border-top: 1px solid var(--c-disabled_dark);
+  border-top: none;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__footer .kv-services-price.kv-services-price_active {

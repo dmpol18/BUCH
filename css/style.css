@@ -402,8 +402,7 @@
 .kv-app .kv-buch .kv-buch__title,
 .kv-app .kv-processing-day .kv-processing-day__title,
 .kv-app .kv-processing-day .kv-processing-day__nuber,
-.kv-app .kv-processing-day .kv-processing-day__subtitle,
-.kv-app .kv-review-card__title {
+.kv-app .kv-processing-day .kv-processing-day__subtitle {
   max-width: calc(100%);
   overflow: hidden;
   -o-text-overflow: ellipsis;
@@ -572,9 +571,6 @@
 
 .kv-app .kv-form__row {
   margin: 0 calc(-1 * var(--gap));
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .kv-app .kv-form__col {
@@ -904,6 +900,11 @@
   -webkit-box-flex: var(--kv-clg);
       -ms-flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
           flex: var(--kv-clg) var(--kv-cls) var(--kv-clb);
+}
+
+.kv-app.kv-app[max-width~="640px"] .kv-form__sublabel {
+  bottom: 1px;
+  font-size: 12px;
 }
 
 .kv-app.kv-app[max-width~="640px"] .kv-form {
@@ -1249,7 +1250,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
           flex: 1 1 0%;
-  min-width: 120px;
 }
 
 .kv-app .kv-form-radio,
@@ -2243,6 +2243,10 @@
   margin-bottom: 0;
 }
 
+.kv-app.kv-app[max-width~="640px"] .kv-buch__row {
+  grid-template-columns: 1fr;
+}
+
 .kv-app .kv-horizontal-labeling {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2392,6 +2396,7 @@
   padding: 8px 35px 8px 10px;
   display: block;
   border-right: 1px solid var(--c-main);
+  word-break: break-all;
 }
 
 .kv-app .kv-buch-chb .kv-buch-chb__icon {
@@ -3554,7 +3559,7 @@
           box-sizing: border-box;
   border-radius: 6px;
   border-collapse: initial;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .kv-app .kv-review-members::-webkit-scrollbar {
@@ -4385,8 +4390,8 @@
 
 .kv-app .kv-class-tabs__item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
+      -ms-flex: 1 0 125px;
+          flex: 1 0 125px;
 }
 
 .kv-app .kv-class-tabs__item:not(:first-child) {
@@ -4797,6 +4802,11 @@
           justify-content: center;
 }
 
+.kv-app .kv-service-pack_is-no-package .kv-class-tabs,
+.kv-app .kv-service-pack_is-no-package .kv-tabs-tail {
+  display: none;
+}
+
 .kv-app .kv-services-price_top {
   display: none;
   -webkit-box-flex: 1;
@@ -4904,6 +4914,12 @@
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__header,
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack_empty .kv-service-pack__footer {
   display: none;
+}
+
+.kv-app.kv-app[max-width~="991px"] .kv-service-pack_is-no-package .kv-class .kv-class__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .kv-app.kv-app[max-width~="991px"] .kv-service-pack__header {

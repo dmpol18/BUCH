@@ -661,6 +661,10 @@
   max-width: 100%;
 }
 
+.kv-app .kv-form__item .v-select {
+  padding: 0 45px 0 5px;
+}
+
 .kv-app .kv-form__item > input,
 .kv-app .kv-form__item > textarea {
   width: 100%;

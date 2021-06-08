@@ -658,6 +658,7 @@
   border-radius: var(--radius);
   min-height: var(--height);
   position: relative;
+  max-width: 100%;
 }
 
 .kv-app .kv-form__item > input,
@@ -740,6 +741,10 @@
   top: 7px;
   font-size: 14px;
   color: var(--c-disabled_dark);
+}
+
+.kv-app .kv-form__item .vs__selected-options {
+  min-width: 0;
 }
 
 .kv-app .kv-form__item .vs__selected {
@@ -2769,6 +2774,14 @@
       -ms-flex: 0 1 360px;
           flex: 0 1 360px;
   max-width: 100%;
+}
+
+.kv-app .kv-processing .vs__dropdown-toggle {
+  padding: 2px 0 4px;
+}
+
+.kv-app .kv-processing .vs__selected-options {
+  min-width: 0;
 }
 
 .kv-app .kv-processing .vs__selected {
